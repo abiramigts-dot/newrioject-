@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PUF Office Cabins in Chennai &amp; Bengaluru | GTS Container</title>
+<meta name="description" content="Factory-direct PUF office cabins, site offices, security cabins and labour accommodation. Insulated, relocatable and ready in days.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFFFFF; --soft:#F6F6F4; --line:#E8E8E4;
+  --text:#111111; --muted:#6B6B6B;
+  --accent:#E07A1F;
+  --max:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--text);background:var(--bg);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+svg{display:block;max-width:100%}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+h1,h2,h3{font-weight:600;letter-spacing:-.025em;line-height:1.15}
+section{padding:120px 0;border-top:1px solid var(--line)}
+.label{font-size:13px;color:var(--muted);margin-bottom:16px;display:block}
+.h2{font-size:clamp(28px,3.4vw,40px);max-width:620px}
+.lead{color:var(--muted);font-size:18px;max-width:520px;margin-top:16px}
+
+.btn{display:inline-block;padding:13px 22px;border-radius:8px;font-weight:500;font-size:15px;transition:background .2s,border-color .2s;cursor:pointer;border:1px solid transparent;font-family:inherit;white-space:nowrap}
+.btn-dark{background:var(--text);color:#fff}
+.btn-dark:hover{background:#333}
+.btn-line{border-color:var(--line);color:var(--text);background:#fff}
+.btn-line:hover{border-color:var(--text)}
+
+/* nav */
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-weight:600;font-size:17px;letter-spacing:-.02em;display:flex;align-items:center;gap:8px}
+.logo::before{content:"";width:10px;height:10px;background:var(--accent);border-radius:2px}
+nav{display:flex;gap:32px;font-size:15px;color:var(--muted)}
+nav a:hover{color:var(--text)}
+.nav-r{display:flex;align-items:center;gap:20px}
+.nav-r .tel{font-size:15px;color:var(--muted)}
+.nav-r .btn{padding:10px 18px;font-size:14px}
+
+/* hero */
+.hero{padding:100px 0 110px;border:0}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.hero h1{font-size:clamp(38px,5vw,60px)}
+.hero h1 span{color:var(--muted)}
+.hero .lead{margin-top:24px}
+.hero .ctas{display:flex;gap:12px;margin-top:36px;flex-wrap:wrap}
+.hero-img{background:var(--soft);border-radius:16px;aspect-ratio:5/4;display:grid;place-items:center;padding:40px}
+.facts{display:flex;gap:40px;margin-top:56px;padding-top:28px;border-top:1px solid var(--line);flex-wrap:wrap}
+.facts b{display:block;font-weight:600;font-size:15px}
+.facts span{font-size:14px;color:var(--muted)}
+
+/* benefits */
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:64px}
+.cols h3{font-size:18px;margin:18px 0 8px}
+.cols p{color:var(--muted);font-size:15px}
+.num{font-size:13px;color:var(--accent);font-weight:500}
+
+/* products */
+.plist{margin-top:56px;border-top:1px solid var(--line)}
+.prow{display:grid;grid-template-columns:1fr 1.4fr auto;gap:24px;align-items:center;padding:24px 0;border-bottom:1px solid var(--line);transition:padding .2s}
+.prow:hover{padding-left:12px}
+.prow h3{font-size:19px}
+.prow p{color:var(--muted);font-size:15px}
+.prow .arrow{color:var(--muted);transition:color .2s}
+.prow:hover .arrow{color:var(--accent)}
+.also{margin-top:32px;color:var(--muted);font-size:15px}
+
+/* specs */
+.spec-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:64px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:16px 0;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:500;color:var(--muted);font-size:13px}
+td:first-child{color:var(--muted);width:34%;padding-right:16px}
+td+td{padding-right:16px}
+.note{font-size:13px;color:var(--muted);margin-top:16px}
+
+/* process */
+.soft{background:var(--soft);border:0}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;margin-top:64px}
+.steps div{border-top:1px solid #D6D6D0;padding-top:24px}
+.steps h3{font-size:17px;margin:12px 0 6px}
+.steps p{font-size:15px;color:var(--muted)}
+
+/* faq */
+.faq{display:grid;grid-template-columns:1fr 1.5fr;gap:64px}
+details{border-bottom:1px solid var(--line)}
+details:first-child{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:22px 0;display:flex;justify-content:space-between;gap:20px;font-weight:500;font-size:17px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--muted);font-weight:400;font-size:20px;line-height:1;transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--muted);padding:0 40px 22px 0;font-size:15px}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1.2fr;gap:64px}
+.cinfo{margin-top:40px;display:grid;gap:22px;font-size:15px}
+.cinfo span{display:block;font-size:13px;color:var(--muted)}
+.cinfo a:hover{color:var(--accent)}
+form{display:grid;gap:16px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+input,select,textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:8px;font:inherit;font-size:15px;color:var(--text);background:#fff;transition:border-color .2s}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--text)}
+textarea{min-height:120px;resize:vertical}
+form .btn{justify-self:start;margin-top:4px}
+.ok{font-size:14px;color:var(--muted);display:none}
+
+/* locations */
+.locs{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:56px}
+.locs h3{font-size:18px;margin-bottom:6px}
+.locs p{color:var(--muted);font-size:15px}
+.locs small{display:block;font-size:13px;color:var(--accent);margin-bottom:10px}
+
+footer{border-top:1px solid var(--line);padding:40px 0;font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a:hover{color:var(--text)}
+
+.fade{opacity:0;transform:translateY(12px);transition:opacity .6s ease,transform .6s ease}
+.fade.in{opacity:1;transform:none}
+
+@media (max-width:900px){
+  nav,.nav-r .tel{display:none}
+  section{padding:80px 0}
+  .hero{padding:56px 0 80px}
+  .hero .wrap,.spec-grid,.faq,.contact{grid-template-columns:1fr;gap:48px}
+  .cols{grid-template-columns:1fr;gap:36px}
+  .steps,.locs{grid-template-columns:1fr 1fr}
+  .prow{grid-template-columns:1fr auto}
+  .prow p{grid-column:1;grid-row:2}
+  .prow .arrow{grid-row:1/3;grid-column:2}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px}
+  .steps,.locs,.row{grid-template-columns:1fr}
+  .facts{gap:24px}
+  .hero-img{padding:24px}
+}
+@media (prefers-reduced-motion:reduce){.fade{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header><div class="wrap">
+  <a href="#" class="logo">GTS Container</a>
+  <nav>
+    <a href="#benefits">Why PUF</a>
+    <a href="#products">Products</a>
+    <a href="#process">Process</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <div class="nav-r">
+    <a class="tel" href="tel:+919994576585">+91 99945 76585</a>
+    <a href="#contact" class="btn btn-dark">Get a quote</a>
+  </div>
+</div></header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="fade">
+      <h1>PUF office cabins, <span>ready in days.</span></h1>
+      <p class="lead">Insulated, relocatable workspaces built in our own Chennai plant and delivered to your site ready to use. No civil work and no dealer markup.</p>
+      <div class="ctas">
+        <a href="#contact" class="btn btn-dark">Get a free estimate</a>
+        <a href="#products" class="btn btn-line">View products</a>
+      </div>
+      <div class="facts">
+        <div><b>Factory-direct</b><span>Built in-house</span></div>
+        <div><b>No civil work</b><span>Place and use</span></div>
+        <div><b>Relocatable</b><span>Moves with your project</span></div>
+      </div>
+    </div>
+    <div class="hero-img fade">
+      <svg viewBox="0 0 400 260" fill="none" stroke="#111" stroke-width="1.5" stroke-linejoin="round" aria-label="Line drawing of a prefabricated office cabin">
+        <line x1="10" y1="230" x2="390" y2="230" stroke="#CFCFC8"/>
+        <rect x="40" y="70" width="320" height="150" fill="#fff"/>
+        <rect x="32" y="60" width="336" height="12" fill="#fff"/>
+        <g stroke="#E8E8E4" stroke-width="1">
+          <line x1="60" y1="72" x2="60" y2="220"/><line x1="80" y1="72" x2="80" y2="220"/><line x1="100" y1="72" x2="100" y2="220"/><line x1="120" y1="72" x2="120" y2="220"/><line x1="140" y1="72" x2="140" y2="220"/><line x1="160" y1="72" x2="160" y2="220"/><line x1="180" y1="72" x2="180" y2="220"/><line x1="200" y1="72" x2="200" y2="220"/><line x1="220" y1="72" x2="220" y2="220"/><line x1="240" y1="72" x2="240" y2="220"/><line x1="260" y1="72" x2="260" y2="220"/><line x1="280" y1="72" x2="280" y2="220"/><line x1="300" y1="72" x2="300" y2="220"/><line x1="320" y1="72" x2="320" y2="220"/><line x1="340" y1="72" x2="340" y2="220"/>
+        </g>
+        <rect x="64" y="100" width="70" height="48" fill="#F6F6F4"/>
+        <line x1="99" y1="100" x2="99" y2="148"/>
+        <rect x="152" y="100" width="70" height="48" fill="#F6F6F4"/>
+        <line x1="187" y1="100" x2="187" y2="148"/>
+        <rect x="262" y="104" width="46" height="116" fill="#E07A1F" stroke="#111"/>
+        <circle cx="300" cy="166" r="2" fill="#111"/>
+        <rect x="248" y="220" width="74" height="10" fill="#fff"/>
+        <rect x="320" y="92" width="28" height="16" fill="#fff"/>
+        <rect x="48" y="220" width="12" height="10" fill="#111"/>
+        <rect x="340" y="220" width="12" height="10" fill="#111"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="benefits">
+  <div class="wrap">
+    <span class="label">Why PUF</span>
+    <h2 class="h2 fade">A workspace that stays cool, quiet and easy to move.</h2>
+    <p class="lead fade">A high-density polyurethane foam core sits between two steel skins.</p>
+    <div class="cols">
+      <div class="fade"><span class="num">01</span><h3>Energy efficient</h3><p>The insulated core keeps Chennai heat out, so the AC runs less and power bills stay lower.</p></div>
+      <div class="fade"><span class="num">02</span><h3>Acoustic comfort</h3><p>The dense panels cut site, traffic and generator noise so your team can focus.</p></div>
+      <div class="fade"><span class="num">03</span><h3>Easy to relocate</h3><p>Lightweight panels make it simple to lift, load and move the cabin to your next site.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="products">
+  <div class="wrap">
+    <span class="label">Products</span>
+    <h2 class="h2 fade">One factory. Every kind of prefab space.</h2>
+    <div class="plist">
+      <a href="#contact" class="prow"><h3>PUF Office Cabins</h3><p>Insulated, AC-ready offices for sites and campuses.</p><span class="arrow">→</span></a>
+      <a href="#contact" class="prow"><h3>MS Office Cabins</h3><p>Rugged mild-steel cabins for demanding sites.</p><span class="arrow">→</span></a>
+      <a href="#contact" class="prow"><h3>Site Offices</h3><p>Multi-room project offices with meeting space.</p><span class="arrow">→</span></a>
+      <a href="#contact" class="prow"><h3>Security Cabins &amp; Police Booths</h3><p>Compact booths with all-round visibility.</p><span class="arrow">→</span></a>
+      <a href="#contact" class="prow"><h3>Labour Accommodation</h3><p>Stackable, ventilated living blocks for large workforces.</p><span class="arrow">→</span></a>
+      <a href="#contact" class="prow"><h3>Portable Toilets &amp; Shops</h3><p>Sanitation units and shutter-front retail kiosks.</p><span class="arrow">→</span></a>
+      <a href="#contact" class="prow"><h3>Prefabricated Warehouses</h3><p>Large-span structures for fast storage expansion.</p><span class="arrow">→</span></a>
+    </div>
+    <p class="also">We also supply farm houses, custom cabins, used containers, PUF panels, water storage tanks and uPVC windows and doors.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap spec-grid">
+    <div>
+      <span class="label">Specifications</span>
+      <h2 class="h2 fade">PUF or MS?</h2>
+      <p class="lead fade">Choose PUF for comfort and AC use. Choose MS for rugged, heavy-duty sites.</p>
+    </div>
+    <div class="fade">
+      <table>
+        <thead><tr><th></th><th>PUF cabin</th><th>MS cabin</th></tr></thead>
+        <tbody>
+          <tr><td>Walls</td><td>PUF sandwich panel</td><td>MS corrugated sheet</td></tr>
+          <tr><td>Insulation</td><td>Built into the panel</td><td>Optional lining</td></tr>
+          <tr><td>Frame</td><td>MS / GI frame</td><td>Heavy MS frame</td></tr>
+          <tr><td>Flooring</td><td>Cement board + vinyl</td><td>Chequered plate / ply</td></tr>
+          <tr><td>Best for</td><td>Offices, clinics, classrooms</td><td>Storage, security, rugged sites</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Typical configurations. Size, layout and finishes can all be customised.</p>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="soft">
+  <div class="wrap">
+    <span class="label">Process</span>
+    <h2 class="h2 fade">From enquiry to move-in.</h2>
+    <div class="steps">
+      <div class="fade"><span class="num">01</span><h3>Consult</h3><p>Tell us your site, use and headcount.</p></div>
+      <div class="fade"><span class="num">02</span><h3>Quote</h3><p>Get a clear drawing and a transparent, factory-direct price.</p></div>
+      <div class="fade"><span class="num">03</span><h3>Build</h3><p>We fabricate it in our Chennai plant, and you're welcome to visit.</p></div>
+      <div class="fade"><span class="num">04</span><h3>Deliver</h3><p>We deliver and place it on site, ready to use.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="border:0">
+  <div class="wrap faq">
+    <div>
+      <span class="label">FAQ</span>
+      <h2 class="h2 fade">Common questions.</h2>
+    </div>
+    <div class="fade">
+      <details><summary>Do you take single orders or only bulk?</summary><p>Both. We build anything from a single security cabin to bulk labour accommodation for industrial plants.</p></details>
+      <details><summary>Why buy from the factory instead of a dealer?</summary><p>There's no middleman markup, you talk directly to the people who build your cabin, and you can customise everything.</p></details>
+      <details><summary>Can I visit the factory before ordering?</summary><p>Yes. Visit our Chennai plants to see the materials and build quality for yourself.</p></details>
+      <details><summary>Can I relocate the cabin later?</summary><p>Yes. Our cabins are designed to be lifted and transported, and our team can handle the move for you.</p></details>
+      <details><summary>Can the cabin match our branding?</summary><p>Yes. We customise the interior, exterior and paint colours, and the panels are ready for your logo and signage.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <div>
+      <span class="label">Contact</span>
+      <h2 class="h2 fade">Get a free quote.</h2>
+      <p class="lead fade">Share a few details. We'll reply with a factory-direct estimate, usually the same working day.</p>
+      <div class="cinfo">
+        <div><span>Phone</span><a href="tel:+919994576585">+91 99945 76585</a></div>
+        <div><span>Email</span><a href="mailto:info@gtscontainerservice.in">info@gtscontainerservice.in</a><br><a href="mailto:jayanthi@gtscontainerservice.in">jayanthi@gtscontainerservice.in</a></div>
+        <div><span>WhatsApp</span><a href="#" class="js-wa">Message us</a></div>
+      </div>
+    </div>
+    <form id="quoteForm" class="fade" novalidate>
+      <div class="row">
+        <div><label for="fn">Name</label><input id="fn" required></div>
+        <div><label for="ph">Phone</label><input id="ph" type="tel" required></div>
+      </div>
+      <div class="row">
+        <div><label for="loc">Site location</label><input id="loc"></div>
+        <div><label for="prd">Product</label>
+          <select id="prd"><option>PUF Office Cabin</option><option>MS Office Cabin</option><option>Site Office</option><option>Security Cabin</option><option>Labour Accommodation</option><option>Portable Toilet / Shop</option><option>Prefab Warehouse</option><option>Other</option></select></div>
+      </div>
+      <div><label for="desc">Details</label><textarea id="desc" placeholder="Size, quantity, timeline"></textarea></div>
+      <button class="btn btn-dark" type="submit">Send enquiry</button>
+      <p class="ok" id="ok">Opening WhatsApp with your details…</p>
+    </form>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="label">Locations</span>
+    <div class="locs" style="margin-top:0">
+      <div><small>Factory &amp; head office</small><h3>Chennai</h3><p>Your address here</p></div>
+      <div><small>Sales &amp; service</small><h3>Bengaluru</h3><p>Your address here</p></div>
+      <div><small>Sales</small><h3>Mysore</h3><p>Your address here</p></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <span>© 2026 GTS Container</span>
+  <span><a href="#">Privacy</a> &nbsp;·&nbsp; <a href="#">Terms</a></span>
+</div></footer>
+
+<script>
+/* Edit your WhatsApp number: country code + number, no "+" or spaces */
+const WHATSAPP = "919994576585";
+const wa = t => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(t)}`;
+
+document.querySelectorAll('.js-wa').forEach(a=>{a.href=wa("Hi, I'd like a quote for a prefab cabin.");a.target="_blank";a.rel="noopener"});
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.fade').forEach(el=>io.observe(el));
+
+document.getElementById('quoteForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const v=id=>document.getElementById(id).value.trim();
+  if(!v('fn')){fn.focus();return} if(!v('ph')){ph.focus();return}
+  ok.style.display='block';
+  window.open(wa(`Quote request\nName: ${v('fn')}\nPhone: ${v('ph')}\nLocation: ${v('loc')}\nProduct: ${v('prd')}\nDetails: ${v('desc')}`),'_blank');
+});
+</script>
+</body>
+</html>
